@@ -14,16 +14,19 @@ import re
 import matplotlib.pyplot as plt
 import pandas as pd
 
+load_dotenv()
 
-connection_string=connection_string
-AZURE_OPENAI_DEPLOYMENT_NAME=AZURE_OPENAI_DEPLOYMENT_NAME
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+AZURE_OPENAI_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION")
+connection_string = os.getenv("connection_string")
+
 AZURE_OPENAI_API_KEY=AZURE_OPENAI_API_KEY
+AZURE_OPENAI_DEPLOYMENT_NAME=AZURE_OPENAI_DEPLOYMENT_NAME
 AZURE_OPENAI_ENDPOINT=AZURE_OPENAI_ENDPOINT
 AZURE_OPENAI_API_VERSION=AZURE_OPENAI_API_VERSION
-
-
-load_dotenv()  
-
+connection_string=connection_string
   
 
 sql_file_path = './sql-scripts/create-tables.sql'  
