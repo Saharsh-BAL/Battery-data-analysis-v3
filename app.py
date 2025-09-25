@@ -13,7 +13,6 @@ from typing import Dict, List
 import re
 import matplotlib.pyplot as plt
 import pandas as pd
-from config import *
 
 
 connection_string=connection_string
