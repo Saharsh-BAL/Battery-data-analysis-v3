@@ -66,7 +66,7 @@ agents = {
     ),  
     "SQL_Divide_Conquer": autogen.AssistantAgent(  
         name="SQL_Divide_Conquer",  
-        system_message=load_yaml("./agents/DivideConquer.yaml"),  
+        system_message=load_yaml("./agents/divideConquer.yaml"),  
         llm_config=llm_config,  
         is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),  
         human_input_mode="NEVER"  
