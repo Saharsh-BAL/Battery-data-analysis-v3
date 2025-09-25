@@ -1,0 +1,9 @@
+streamlit  
+autogen  
+openai  
+sqlparse  
+simple-ddl-parser  
+pyodbc  
+python-dotenv  
+pydantic  
+pyyaml  
